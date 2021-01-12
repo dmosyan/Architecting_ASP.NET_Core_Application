@@ -4,7 +4,10 @@ using System.Text;
 
 namespace GlobalTicket.TicketManagement.Domain.Entities
 {
-    class Category
+    public class Category
     {
+        public Guid CategoryId { get; set; }
+        public string Name { get; set; }
+        public ICollection<Event> Events { get; set; }
     }
 }
